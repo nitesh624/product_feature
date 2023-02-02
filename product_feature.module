@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains product_feature.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function product_feature_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the product_feature module.
+    case 'help.page.product_feature':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Provide QR code display feature on product page.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function product_feature_theme() {
+  return [
+    'product_feature' => [
+      'render element' => 'children',
+    ],
+  ];
+}

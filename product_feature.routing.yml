@@ -1,0 +1,12 @@
+# product_feature.qrdata:
+#   path: '/qr-data/{data}'
+#   defaults:
+#     _controller: '\Drupal\product_feature\Controller\QRController::qrdata'
+#   requirements:
+#     _access: 'TRUE'
+product_feature.qrurl:
+  path: '/qr-with-url'
+  defaults:
+    _controller: '\Drupal\product_feature\Controller\QRController::withUrl'
+  requirements:
+    _access: 'TRUE'

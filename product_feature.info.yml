@@ -1,0 +1,9 @@
+name: 'Product Feature - QR Block'
+type: module
+description: 'Provide QR code display feature on product page.'
+core_version_requirement: '^9 || ^10'
+package: Custom
+dependencies:
+  - node
+  - image
+  - menu_ui

@@ -1,0 +1,9 @@
+{
+  "name": "drupal/product_feature",
+  "description": "Provide QR code display feature on product page.",
+  "type": "drupal-module",
+  "authors": [],
+  "require": {
+    "endroid/qr-code-bundle": "^3.4"
+  }
+}
